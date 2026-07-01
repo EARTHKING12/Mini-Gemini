@@ -1,0 +1,114 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    width: 90%;
+    max-width: 850px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.App h1{
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea:focus{
+    border-color: #667eea;
+    box-shadow: 0 0 10px rgba(102,126,234,0.3);
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+.response{
+    margin-top: 30px;
+    text-align: left;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
+
+.response h2{
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.response p{
+    color: #555;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .App{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .App h1{
+        font-size: 1.6rem;
+    }
+
+    textarea{
+        font-size: 15px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
